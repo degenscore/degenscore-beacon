@@ -1,0 +1,265 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xd1933274bd7c7d9A92622f0722Af840Fc3E8e3cb",
+    "txHash": "0xbaf8a429d2baef24542555f344eb4884c2ab884e83a9301b704128d6f08cec84"
+  },
+  "proxies": [
+    {
+      "address": "0x59c0727E186fBD639762Ca071ba1644D95eE954b",
+      "txHash": "0x130c82625638c17e70635ad844edf423a3e5a97ca1f3ad771e9b1346020929e4",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "1c1807e43b4789ba3b0d9e874409e4d17795489a51b282289d74e2a73717f615": {
+      "address": "0xdeB7646E77c91715f099c7275e933926B0dd0232",
+      "txHash": "0x50eb760842146869338e7d44a169f9c9ac3aa9d6188c87485937020460a8e8f3",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "SoulboundERC1155",
+            "src": "contracts/SoulboundERC1155.sol:46"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "50",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "100",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "150",
+            "type": "t_bool",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:116"
+          },
+          {
+            "label": "signer",
+            "offset": 0,
+            "slot": "200",
+            "type": "t_address",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:53"
+          },
+          {
+            "label": "feeCollector",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_address_payable",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:56"
+          },
+          {
+            "label": "signatureTTLSeconds",
+            "offset": 20,
+            "slot": "201",
+            "type": "t_uint32",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:59"
+          },
+          {
+            "label": "primaryTraitURI",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_string_storage",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:62"
+          },
+          {
+            "label": "beaconURI",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_string_storage",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:65"
+          },
+          {
+            "label": "_traits",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Trait)4150_storage))",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:68"
+          },
+          {
+            "label": "beaconData",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_mapping(t_address,t_struct(BeaconData)4161_storage)",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:71"
+          },
+          {
+            "label": "beaconIds",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_mapping(t_uint128,t_address)",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:74"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Trait)4150_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Trait))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(BeaconData)4161_storage)": {
+            "label": "mapping(address => struct BeaconData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint128,t_address)": {
+            "label": "mapping(uint128 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Trait)4150_storage)": {
+            "label": "mapping(uint256 => struct Trait)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(BeaconData)4161_storage": {
+            "label": "struct BeaconData",
+            "members": [
+              {
+                "label": "beaconId",
+                "type": "t_uint128",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "updatedAt",
+                "type": "t_uint64",
+                "offset": 16,
+                "slot": "0"
+              },
+              {
+                "label": "traitIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Trait)4150_storage": {
+            "label": "struct Trait",
+            "members": [
+              {
+                "label": "updatedAt",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "value",
+                "type": "t_uint192",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint128": {
+            "label": "uint128",
+            "numberOfBytes": "16"
+          },
+          "t_uint192": {
+            "label": "uint192",
+            "numberOfBytes": "24"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint32": {
+            "label": "uint32",
+            "numberOfBytes": "4"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

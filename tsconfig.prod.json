@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationMap": true,
+    "lib": ["es2020"]
+  },
+  "files": ["./index.ts"],
+  "include": ["typechain-types/**/*"]
+}

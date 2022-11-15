@@ -1,0 +1,46 @@
+{
+  "name": "@degenscore/degenscore-beacon",
+  "author": "DegenScore Team",
+  "version": "0.0.0",
+  "private": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "hardhat coverage",
+    "storageLayout": "hardhat check",
+    "package": "hardhat prepare-package && tsc --project tsconfig.prod.json"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@openzeppelin/contracts-upgradeable": "^4.7.3",
+    "@openzeppelin/hardhat-upgrades": "^1.20.0",
+    "@types/fs-extra": "^9.0.13",
+    "dotenv": "^16.0.3",
+    "fs-extra": "^10.1.0",
+    "hardhat": "^2.11.2",
+    "hardhat-packager": "^1.4.2",
+    "hardhat-storage-layout": "^0.1.6",
+    "hardhat-tracer": "^1.1.0-rc.9",
+    "prettier": "2.7.1"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.7.1",
+    "ethers": "^5.7.1"
+  },
+  "files": [
+    "/contracts",
+    "/artifacts",
+    "/dist/**/*.d.ts",
+    "/dist/**/*.d.ts.map",
+    "/dist/**/*.js",
+    "/dist/**/*.js.map"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/degenscore/degenscore-beacon.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "license": "MIT"
+}

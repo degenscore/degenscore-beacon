@@ -1,0 +1,19 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+
+#Hardhat files
+cache
+artifacts
+storageLayout
+.openzeppelin/unknown-*.json
+
+test-ui
+dist
+scripts/beaconData.json
+deployments/hardhat.json
+deployments/localhost.json
+*.bak
