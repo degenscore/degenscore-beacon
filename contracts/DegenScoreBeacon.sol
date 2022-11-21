@@ -73,6 +73,11 @@ contract DegenScoreBeacon is
     /// @dev reverse lookup for a Beacon ID
     mapping(uint128 => address) private beaconIds;
 
+    /// @custom:oz-upgrades-unsafe-allow constructor
+    constructor() {
+        _disableInitializers();
+    }
+
     function initialize(
         address _owner,
         address _signer,

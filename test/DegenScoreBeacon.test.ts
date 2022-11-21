@@ -338,6 +338,22 @@ describe("DegenScoreBeacon", () => {
             ).revertedWith("Initializable: contract is already initialized");
         });
 
+        it("has initialized the implementation contact", async () => {
+            const implAddr = await upgrades.erc1967.getImplementationAddress(beacon.address);
+            const beaconImpl = DegenScoreBeacon__factory.connect(implAddr, owner);
+
+            await expect(
+                beaconImpl.initialize(
+                    owner.address,
+                    signer.address,
+                    feeCollector.address,
+                    signatureTTL,
+                    traitURI,
+                    beaconURI
+                )
+            ).revertedWith("Initializable: contract is already initialized");
+        });
+
         it("rejects accounts and ids length mismatch on batch", async () => {
             await expect(beacon.balanceOfBatch([user.address], [dsId, trait2Id, trait3Id])).revertedWith(
                 "accounts and ids length mismatch"
