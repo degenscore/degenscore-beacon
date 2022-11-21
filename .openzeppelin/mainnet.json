@@ -260,6 +260,255 @@
           }
         }
       }
+    },
+    "ced479c7a5d4845a8c58933e3ede978bab9fcbe85c00506f997d56133412b11a": {
+      "address": "0x76699672d0fE020835b4c2cC8d8252eA2490C064",
+      "txHash": "0xbb45bb8ff23c3fd4abc5c4e12cc080283940477698b07b6054c4bedde973947a",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "SoulboundERC1155",
+            "src": "contracts/SoulboundERC1155.sol:46"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "50",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "100",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "150",
+            "type": "t_bool",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:116"
+          },
+          {
+            "label": "signer",
+            "offset": 0,
+            "slot": "200",
+            "type": "t_address",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:53"
+          },
+          {
+            "label": "feeCollector",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_address_payable",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:56"
+          },
+          {
+            "label": "signatureTTLSeconds",
+            "offset": 20,
+            "slot": "201",
+            "type": "t_uint32",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:59"
+          },
+          {
+            "label": "primaryTraitURI",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_string_storage",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:62"
+          },
+          {
+            "label": "beaconURI",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_string_storage",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:65"
+          },
+          {
+            "label": "_traits",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Trait)4158_storage))",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:68"
+          },
+          {
+            "label": "beaconData",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_mapping(t_address,t_struct(BeaconData)4169_storage)",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:71"
+          },
+          {
+            "label": "beaconIds",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_mapping(t_uint128,t_address)",
+            "contract": "DegenScoreBeacon",
+            "src": "contracts/DegenScoreBeacon.sol:74"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Trait)4158_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Trait))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(BeaconData)4169_storage)": {
+            "label": "mapping(address => struct BeaconData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint128,t_address)": {
+            "label": "mapping(uint128 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Trait)4158_storage)": {
+            "label": "mapping(uint256 => struct Trait)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(BeaconData)4169_storage": {
+            "label": "struct BeaconData",
+            "members": [
+              {
+                "label": "beaconId",
+                "type": "t_uint128",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "updatedAt",
+                "type": "t_uint64",
+                "offset": 16,
+                "slot": "0"
+              },
+              {
+                "label": "traitIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Trait)4158_storage": {
+            "label": "struct Trait",
+            "members": [
+              {
+                "label": "updatedAt",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "value",
+                "type": "t_uint192",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint128": {
+            "label": "uint128",
+            "numberOfBytes": "16"
+          },
+          "t_uint192": {
+            "label": "uint192",
+            "numberOfBytes": "24"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint32": {
+            "label": "uint32",
+            "numberOfBytes": "4"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
     }
   }
 }
