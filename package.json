@@ -24,7 +24,7 @@
     "prettier": "2.7.1"
   },
   "dependencies": {
-    "@ethersproject/providers": "^5.7.1",
+    "@ethersproject/providers": "^5.7.2",
     "ethers": "^5.7.1"
   },
   "files": [
