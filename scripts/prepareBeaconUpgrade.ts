@@ -10,6 +10,8 @@ async function main() {
     console.log("Upgraded to:", upgradeAddress);
 
     if (network.name === "mainnet" || network.name === "goerli") {
+        console.log("Waiting for contract propagation")
+        await new Promise((r) => setTimeout(r, 5000)); // sleep to wait for propagation on etherscan
         await run("verify", { address: upgradeAddress });
     }
 }
