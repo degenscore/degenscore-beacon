@@ -19,7 +19,7 @@
     "fs-extra": "^10.1.0",
     "hardhat": "^2.12.2",
     "hardhat-packager": "^1.4.2",
-    "hardhat-storage-layout": "^0.1.6",
+    "hardhat-storage-layout": "^0.1.7",
     "hardhat-tracer": "^1.1.0-rc.9",
     "prettier": "2.7.1"
   },
