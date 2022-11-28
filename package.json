@@ -21,7 +21,7 @@
     "hardhat-packager": "^1.4.2",
     "hardhat-storage-layout": "^0.1.7",
     "hardhat-tracer": "^1.1.0-rc.9",
-    "prettier": "2.7.1"
+    "prettier": "2.8.0"
   },
   "dependencies": {
     "@ethersproject/providers": "^5.7.2",
